@@ -1,3 +1,96 @@
+:root {
+  --primary-color: hsl(0, 0%, 98%);
+  --Gray: hsl(0, 0%, 41%);
+  --Black: hsl(0, 0%, 8%);
+}
+
+/* reset */
+body,
+main,
+.topnav,
+h1,
+p {
+  margin: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* font */
+:root {
+  --font-family: "Epilogue", sans-serif;
+}
+
+/* desktop styles */
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  align-items: center;
+}
+
+.topnav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
-  font-size: 8rem;
+}
+
+p {
+  color: var(--Gray);
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  color: var(--Gray);
+  font-size: 1.115rem;
+  padding: 0 1.5em;
+}
+
+.topnav li:hover {
+  color: var(--Black);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.right-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Black);
+}
+
+.dropdown-menu {
+  flex-direction: column;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 1px solid var(--Black);
+  border-radius: 1em;
+  list-style: none;
+  color: var(--Gray);
+  text-align: center;
+}
+
+.btn-dropdown {
+  padding: 0 0.5em 0.65em 0.5em;
+  background-color: white;
+  border: none;
 }
